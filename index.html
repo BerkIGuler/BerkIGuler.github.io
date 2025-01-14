@@ -3,70 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berkay Guler</title>
+    <meta name="description" content="Berkay Guler - Computer Science PhD Student at UC Irvine, researching machine learning for wireless communications">
+    <meta name="keywords" content="Berkay Guler, Machine Learning, Wireless Communications, PhD Student, UC Irvine, CPCC">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Berkay Guler - CS PhD Student">
+    <meta property="og:description" content="Computer Science PhD Student researching machine learning for wireless communications at UC Irvine">
+    <meta property="og:image" content="assets/images/getty.JPG">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Berkay Guler - CS PhD Student">
+    <meta name="twitter:description" content="Computer Science PhD Student researching machine learning for wireless communications at UC Irvine">
+    <meta name="twitter:image" content="assets/images/getty.JPG">
+
+    <title>Berkay Guler - CS PhD Student | UC Irvine</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Berkay Guler",
+      "jobTitle": "PhD Student",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of California, Irvine"
+      },
+      "url": "https://yourwebsite.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/berkay--guler",
+        "https://github.com/BerkIGuler",
+        "https://scholar.google.com/citations?user=aY7kszEAAAAJ&hl=en"
+      ]
+    }
+    </script>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 transition-colors duration-200" x-data="{ darkMode: false }" :class="{ 'dark bg-gray-900': darkMode }">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-blue-500 text-white p-2">
+        Skip to main content
+    </a>
+
     <div class="container mx-auto px-4 py-8 max-w-3xl">
-        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+        <!-- Dark mode toggle -->
+        <button 
+            @click="darkMode = !darkMode" 
+            class="fixed top-4 right-4 p-3 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-200 cursor-pointer"
+            aria-label="Toggle dark mode">
+            <i class="fas pointer-events-none" :class="darkMode ? 'fa-sun' : 'fa-moon'"></i>
+        </button>
+
+        <main id="main-content" class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8 transition-colors duration-200">
             <!-- Profile Section -->
             <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
                 <!-- Profile Picture -->
-                <img src="assets/images/getty.JPG" alt="Profile Picture" class="rounded-full w-48 h-48 object-cover shadow-md">
+                <img src="assets/images/getty.JPG" alt="Berkay Guler, Computer Science PhD Student at UC Irvine" 
+                     class="rounded-full w-72 h-72 object-cover shadow-md transform hover:scale-105 transition-transform duration-200">
                 
                 <!-- Bio Section -->
                 <div class="flex-1">
-                    <h1 class="text-3xl font-bold text-gray-800 mb-2">Your Name</h1>
-                    <p class="text-gray-600 mb-4">
+                    <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2">Berkay Guler</h1>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
                         Computer Science PhD Student within Networked Systems Program<br>
                         <br>
-                        Center of Pervasive Communications and Computing (CPCC)
+                        <a href="https://cpcc.uci.edu/" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="hover:text-blue-600 dark:hover:text-blue-400 underline transition-colors duration-200">
+                            Center of Pervasive Communications and Computing (CPCC)
+                        </a>
                         <br>
                         University of California, Irvine
                     </p>
-                    <p class="text-gray-700">
-                        Your bio goes here. Write about your research interests, current projects, and academic background. 
-                        This section should give visitors a quick overview of your academic profile and research focus.
-                    </p>
+                    <div class="text-gray-700 dark:text-gray-300 space-y-4">
+                        <p>
+                            As a current PhD student focusing on machine learning for wireless communications, and with prior experience as a machine learning engineer/researcher, I have gained exposure to various aspects of machine learning from both application and research perspectives. My current research explores the intersection of machine learning and networked systems.
+                        </p>
+                        <p>
+                            Beyond technical pursuits, I actively engage in volunteering, mentoring, and networking activities to develop my interpersonal skills. I enjoy connecting with individuals from diverse backgrounds and am always open to forging new connections and collaborations.
+                        </p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Contact Section -->
+            <div class="mt-8 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg transition-colors duration-200">
+                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Get in Touch</h2>
+                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                    Feel free to reach out—I welcome conversations with anyone interested in machine learning or networked systems, or those simply looking to connect and exchange ideas.
+                </p>
+                <a href="mailto:your.email@uci.edu" 
+                   class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
+                    Send me an email
+                </a>
+            </div>
+
             <!-- Social Links -->
             <div class="mt-8 flex flex-wrap justify-center gap-8">
                 <!-- LinkedIn -->
-                <div class="text-center">
-                    <a href="https://www.linkedin.com/in/berkay--guler" target="_blank" rel="noopener noreferrer" 
-                       class="flex flex-col items-center text-gray-700 hover:text-blue-600">
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="https://www.linkedin.com/in/berkay--guler" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                       aria-label="Visit Berkay's LinkedIn profile">
                         <i class="fab fa-linkedin text-4xl mb-2"></i>
                         <span>LinkedIn</span>
                     </a>
                 </div>
                 <!-- GitHub -->
-                <div class="text-center">
-                    <a href="https://github.com/BerkIGuler" target="_blank" rel="noopener noreferrer"
-                       class="flex flex-col items-center text-gray-700 hover:text-gray-900">
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="https://github.com/BerkIGuler" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+                       aria-label="Visit Berkay's GitHub profile">
                         <i class="fab fa-github text-4xl mb-2"></i>
                         <span>GitHub</span>
                     </a>
                 </div>
                 <!-- Google Scholar -->
-                <div class="text-center">
-                    <a href="https://scholar.google.com/citations?user=aY7kszEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"
-                       class="flex flex-col items-center text-gray-700 hover:text-blue-700">
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="https://scholar.google.com/citations?user=aY7kszEAAAAJ&hl=en" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200"
+                       aria-label="View Berkay's publications on Google Scholar">
                         <i class="fas fa-graduation-cap text-4xl mb-2"></i>
                         <span>Google Scholar</span>
                     </a>
                 </div>
                 <!-- CV -->
-                <div class="text-center">
-                    <a href="assets/pdf/cv.pdf" target="_blank" rel="noopener noreferrer"
-                       class="flex flex-col items-center text-gray-700 hover:text-red-600">
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="assets/pdf/cv.pdf" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
+                       aria-label="Download Berkay's CV">
                         <i class="fas fa-file-pdf text-4xl mb-2"></i>
                         <span>CV</span>
                     </a>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
+
+    <!-- Alpine.js for dark mode -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" defer></script>
 </body>
 </html>
