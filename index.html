@@ -47,7 +47,7 @@
         Skip to main content
     </a>
 
-    <div class="container mx-auto px-4 py-8 max-w-3xl">
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
         <!-- Dark mode toggle -->
         <button 
             @click="darkMode = !darkMode" 
@@ -99,6 +99,82 @@
                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
                     Send me an email
                 </a>
+            </div>
+
+            <!-- Research Papers Section -->
+            <div class="mt-8">
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Research Papers</h2>
+                <div class="space-y-8">
+                    <!-- Research Paper 1 -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-4">
+                            <!-- Paper Title -->
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                AdaFortiTran: An Adaptive Transformer Model for Robust OFDM Channel Estimation
+                            </h3>
+                            <!-- Paper Figure -->
+                            <div class="flex justify-center">
+                                <img src="assets/images/adafortitran_arch.png" 
+                                     alt="AdaFortiTran Architecture" 
+                                     class="max-w-full h-80 object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                            </div>
+                            <!-- Paper Details -->
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                    Deep learning models for channel estimation in Orthogonal Frequency Division Multiplexing (OFDM) systems often suffer from performance degradation under fast-fading channels and low-SNR scenarios. To address these limitations, we introduce the Adaptive Fortified Transformer (AdaFortiTran), a novel model specifically designed to enhance channel estimation in challenging environments. Our approach employs convolutional layers that exploit locality bias to capture strong correlations between neighboring channel elements, combined with a transformer encoder that applies the global Attention mechanism to channel patches. This approach effectively models both long-range dependencies and spectro-temporal interactions within single OFDM frames. We further augment the model's adaptability by integrating nonlinear representations of available channel statistics SNR, delay spread, and Doppler shift as priors. A residual connection is employed to merge global features from the transformer with local features from early convolutional processing, followed by final convolutional layers to refine the hierarchical channel representation. Despite its compact architecture, AdaFortiTran achieves up to 6 dB reduction in mean squared error (MSE) compared to state-of-the-art models. Tested across a wide range of Doppler shifts (200-1000 Hz), SNRs (0 to 25 dB), and delay spreads (50-300 ns), it demonstrates superior robustness in high-mobility environments.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Machine Learning</span>
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">AI for Channel Estimation</span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">OFDM Systems</span>
+                                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">Super-resolution</span>
+                                </div>
+                                <a href="https://arxiv.org/abs/2505.09076" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200">
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    Read Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Paper 2 -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-4">
+                            <!-- Paper Title -->
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                A Multi-Task Foundation Model for Wireless Channel Representation Using Contrastive and Masked Autoencoder Learning
+                            </h3>
+                            <!-- Paper Figure -->
+                            <div class="flex justify-center">
+                                <img src="assets/images/contrawimae_arch.png" 
+                                     alt="ContraWiMAE Architecture" 
+                                     class="max-w-full h-80 object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                            </div>
+                            <!-- Paper Details -->
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                    Current applications of self-supervised learning to wireless channel representation often borrow paradigms developed for text and image processing, without fully addressing the unique characteristics and constraints of wireless communications. Aiming to fill this gap, we first propose WiMAE (Wireless Masked Autoencoder), a transformer-based encoder-decoder foundation model pretrained on a realistic open-source multi-antenna wireless channel dataset. Building upon this foundation, we develop ContraWiMAE, which enhances WiMAE by incorporating a contrastive learning objective alongside the reconstruction task in a unified multi-task framework. By warm-starting from pretrained WiMAE weights and generating positive pairs via noise injection, the contrastive component enables the model to capture both structural and discriminative features, enhancing representation quality beyond what reconstruction alone can achieve. Through extensive evaluation on unseen scenarios, we demonstrate the effectiveness of both approaches across multiple downstream tasks, with ContraWiMAE showing further improvements in linear separability and adaptability in diverse wireless environments. Comparative evaluations against a state-of-the-art wireless channel foundation model confirm the superior performance and data efficiency of our models, highlighting their potential as powerful baselines for future research in self-supervised wireless channel representation learning.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Machine Learning</span>
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">Representation Learning</span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">Wireless Channels</span>
+                                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">Self-supervised learning</span>
+                                </div>
+                                <a href="https://arxiv.org/abs/2505.09160" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200">
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    Read Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Social Links -->
