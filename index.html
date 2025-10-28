@@ -21,6 +21,12 @@
     <title>Berkay Guler - CS PhD Student | UC Irvine</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 
     <script type="application/ld+json">
     {
@@ -89,6 +95,72 @@
                 </div>
             </div>
 
+            <!-- Social Links and Navigation -->
+            <div class="mt-8 flex flex-wrap justify-center gap-6">
+                <!-- Research Papers -->
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="#research-papers" 
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                       aria-label="Jump to Research Papers section">
+                        <i class="fas fa-file-alt text-4xl mb-2"></i>
+                        <span>Research Papers</span>
+                    </a>
+                </div>
+                <!-- Lectures -->
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="#lectures" 
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200"
+                       aria-label="Jump to Lectures section">
+                        <i class="fas fa-chalkboard-teacher text-4xl mb-2"></i>
+                        <span>Lectures</span>
+                    </a>
+                </div>
+                <!-- LinkedIn -->
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="https://www.linkedin.com/in/berkay--guler" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                       aria-label="Visit Berkay's LinkedIn profile">
+                        <i class="fab fa-linkedin text-4xl mb-2"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <!-- GitHub -->
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="https://github.com/BerkIGuler" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+                       aria-label="Visit Berkay's GitHub profile">
+                        <i class="fab fa-github text-4xl mb-2"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <!-- Google Scholar -->
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="https://scholar.google.com/citations?user=aY7kszEAAAAJ&hl=en" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200"
+                       aria-label="View Berkay's publications on Google Scholar">
+                        <i class="fas fa-graduation-cap text-4xl mb-2"></i>
+                        <span>Google Scholar</span>
+                    </a>
+                </div>
+                <!-- CV -->
+                <div class="text-center transform hover:scale-110 transition-transform duration-200">
+                    <a href="assets/pdf/cv.pdf" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
+                       aria-label="Download Berkay's CV">
+                        <i class="fas fa-file-pdf text-4xl mb-2"></i>
+                        <span>CV</span>
+                    </a>
+                </div>
+            </div>
+
             <!-- Contact Section -->
             <div class="mt-8 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg transition-colors duration-200">
                 <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Get in Touch</h2>
@@ -102,7 +174,7 @@
             </div>
 
             <!-- Research Papers Section -->
-            <div class="mt-8">
+            <div id="research-papers" class="mt-8">
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Research Papers</h2>
                 <div class="space-y-8">
                     <!-- Research Paper 1 -->
@@ -177,51 +249,38 @@
                 </div>
             </div>
 
-            <!-- Social Links -->
-            <div class="mt-8 flex flex-wrap justify-center gap-8">
-                <!-- LinkedIn -->
-                <div class="text-center transform hover:scale-110 transition-transform duration-200">
-                    <a href="https://www.linkedin.com/in/berkay--guler" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-                       aria-label="Visit Berkay's LinkedIn profile">
-                        <i class="fab fa-linkedin text-4xl mb-2"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                </div>
-                <!-- GitHub -->
-                <div class="text-center transform hover:scale-110 transition-transform duration-200">
-                    <a href="https://github.com/BerkIGuler" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
-                       aria-label="Visit Berkay's GitHub profile">
-                        <i class="fab fa-github text-4xl mb-2"></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-                <!-- Google Scholar -->
-                <div class="text-center transform hover:scale-110 transition-transform duration-200">
-                    <a href="https://scholar.google.com/citations?user=aY7kszEAAAAJ&hl=en" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200"
-                       aria-label="View Berkay's publications on Google Scholar">
-                        <i class="fas fa-graduation-cap text-4xl mb-2"></i>
-                        <span>Google Scholar</span>
-                    </a>
-                </div>
-                <!-- CV -->
-                <div class="text-center transform hover:scale-110 transition-transform duration-200">
-                    <a href="assets/pdf/cv.pdf" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
-                       aria-label="Download Berkay's CV">
-                        <i class="fas fa-file-pdf text-4xl mb-2"></i>
-                        <span>CV</span>
-                    </a>
+            <!-- Lectures Section -->
+            <div id="lectures" class="mt-8">
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Lectures</h2>
+                <div class="space-y-8">
+                    <!-- Lecture 1 -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-4">
+                            <!-- Lecture Title -->
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                Understanding Attention: From Signals to Learning
+                            </h3>
+                            <!-- Lecture Details -->
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                    An introductory exploration of attention mechanisms in machine learning, covering the evolution from signal processing concepts to modern variants. This lecture provides comprehensive insights into how/why attention works as well as into its limitations.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full">Attention Mechanisms</span>
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Machine Learning</span>
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">Signal Processing</span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">Transformers</span>
+                                </div>
+                                <a href="assets/lectures/attention_lecture.pdf" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200">
+                                    <i class="fas fa-file-pdf mr-2"></i>
+                                    View Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
