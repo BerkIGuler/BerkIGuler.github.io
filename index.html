@@ -38,7 +38,7 @@
         "@type": "Organization",
         "name": "University of California, Irvine"
       },
-      "url": "https://yourwebsite.com",
+      "url": "https://berkiguler.github.io",
       "sameAs": [
         "https://www.linkedin.com/in/berkay--guler",
         "https://github.com/BerkIGuler",
@@ -86,7 +86,10 @@
                     </p>
                     <div class="text-gray-700 dark:text-gray-300 space-y-4">
                         <p>
-                            As a current PhD student focusing on machine learning for wireless communications, and with prior experience as a machine learning engineer/researcher, I have gained exposure to various aspects of machine learning from both application and research perspectives. My current research explores the intersection of machine learning and networked systems.
+                            As a current PhD student focusing on machine learning for wireless communications, and with prior experience as a machine learning engineer/researcher, I have gained exposure to various aspects of machine learning from both application and research perspectives. My current research explores channel understanding and representation learning for next generation wireless systems across various tasks such as beam management, CSI compression/feedback, localization, channel prediction, and more.
+                        </p>
+                        <p>
+                            I am fortunate to be advised by <a href="https://newport.eecs.uci.edu/~hamidj/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 dark:hover:text-blue-400 underline transition-colors duration-200">Prof. Hamid Jafarkhani</a>; his guidance and example motivate my work alongside our talented research team.
                         </p>
                         <p>
                             Beyond technical pursuits, I actively engage in volunteering, mentoring, and networking activities to develop my interpersonal skills. I enjoy connecting with individuals from diverse backgrounds and am always open to forging new connections and collaborations.
@@ -163,20 +166,45 @@
 
             <!-- Contact Section -->
             <div class="mt-8 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg transition-colors duration-200">
-                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Get in Touch</h2>
-                <p class="text-gray-700 dark:text-gray-300 mb-4">
-                    Feel free to reach out—I welcome conversations with anyone interested in machine learning for networked systems, or those simply looking to connect and exchange ideas.
+                <h2 class="mb-4">
+                    <a href="mailto:gulerb@uci.edu"
+                       class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200 text-xl font-semibold">
+                        Get in Touch
+                    </a>
+                </h2>
+                <p class="text-gray-700 dark:text-gray-300 mb-0">
+                    Feel free to reach out! I welcome conversations with anyone interested in ML/AI/Wireless, or those simply looking to connect and exchange ideas :)
                 </p>
-                <a href="mailto:gulerb@uci.edu" 
-                   class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
-                    Send me an email
-                </a>
             </div>
 
             <!-- Updates Section -->
             <div id="updates" class="mt-8">
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Updates</h2>
                 <div class="space-y-6">
+                    <!-- Update Entry 0 -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-3">
+                            <div class="flex items-start justify-between flex-wrap gap-2">
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                    Best Paper Runner-Up at NeurIPS 2025 Workshop
+                                </h3>
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full font-medium">
+                                    Award
+                                </span>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300">
+                                Our paper earned the Best Paper Runner-Up Award (sponsored by Qualcomm) at the NeurIPS 2025 Workshop on AI and ML for Next-Generation Wireless Communications and Networking. The work introduces a noisy masked contrastive objective to learn robust, task-agnostic CSI representations that perform strongly across 5G/6G tasks without task-specific adaptation.
+                            </p>
+                            <a href="https://openreview.net/pdf?id=KXNDs9ZGb9" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 dark:text-blue-300 hover:underline text-sm font-medium">
+                                Read the paper
+                                <i class="fas fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                            </a>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                December 2025
+                            </p>
+                        </div>
+                    </div>
+
                     <!-- Update Entry 1 -->
                     <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
                         <div class="space-y-3">
@@ -243,6 +271,41 @@
             <div id="research-papers" class="mt-8">
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Research Papers</h2>
                 <div class="space-y-8">
+                    <!-- Research Paper 0 -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-4">
+                            <!-- Paper Title -->
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                Robust Channel Representation for Wireless: A Multi-Task Masked Contrastive Approach
+                            </h3>
+                            <!-- Paper Figure -->
+                            <div class="flex justify-center">
+                                <img src="assets/images/neurips_25.png" 
+                                     alt="NeurIPS 2025 Workshop Best Paper Runner-Up" 
+                                     class="max-w-full h-80 object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                            </div>
+                            <!-- Paper Details -->
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                    Wireless environments present unique challenges for machine learning (ML) due to partial observability, multi-domain characteristics, and dynamic nature. To address these challenges, we propose ContraWiMAE (Wireless Masked Contrastive Autoencoder), a multi-task learning framework that learns robust representations from incomplete wireless channel observations avoiding expensive augmentation engineering. Our approach combines masked autoencoder learning with a novel masked contrastive objective that contrasts differently masked versions of the same channel, leveraging the inherent wireless complexity as natural augmentation. We employ a curriculum learning strategy systematically developing representations that maintain structural properties while enhancing discriminative capabilities. The framework enables learning task-specific invariances, which we demonstrate through noise invariance and improved linear separability tested on channel estimation and cross-frequency beam selection in unseen environments. Our experiments demonstrate superior representation stability under severe noise conditions with performance close to supervised training.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Self-supervised learning</span>
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">Wireless Channels</span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">Contrastive Learning</span>
+                                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">CSI Representation</span>
+                                </div>
+                                <a href="https://openreview.net/pdf?id=KXNDs9ZGb9" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200">
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    Read Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Research Paper 1 -->
                     <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
                         <div class="space-y-4">
@@ -267,7 +330,7 @@
                                     <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">OFDM Systems</span>
                                     <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">Super-resolution</span>
                                 </div>
-                                <a href="https://arxiv.org/abs/2505.09076" 
+                                <a href="https://ieeexplore.ieee.org/document/11160810" 
                                    target="_blank" 
                                    rel="noopener noreferrer"
                                    class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200">
