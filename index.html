@@ -181,6 +181,50 @@
             <div id="updates" class="mt-8">
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Updates</h2>
                 <div class="space-y-6">
+                    <!-- Update Entry: PilotWiMAE preprint -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-3">
+                            <div class="flex items-start justify-between flex-wrap gap-2">
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                    PilotWiMAE Preprint Available
+                                </h3>
+                                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full font-medium">
+                                    Preprint
+                                </span>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300">
+                                Preprint of our paper "PilotWiMAE: Pilot-Native Representation Learning for Wireless Channels" is now available on arXiv. The manuscript has been submitted to IEEE JSTSP (Journal on Selected Topics in Signal Processing).
+                            </p>
+                            <a href="https://arxiv.org/abs/2605.22856" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 dark:text-blue-300 hover:underline text-sm font-medium">
+                                Read the preprint
+                                <i class="fas fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                            </a>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                May 2026
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Update Entry: PilotWiMAE ICML submission -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-3">
+                            <div class="flex items-start justify-between flex-wrap gap-2">
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                    Paper Submitted to ICML 2026 AI4NextG Workshop
+                                </h3>
+                                <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full font-medium">
+                                    Submitted
+                                </span>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300">
+                                Our work "PilotWiMAE: wireless channel pilots are all you need" has been submitted to the AI4NextG workshop at ICML 2026 (International Conference on Machine Learning).
+                            </p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                May 2026
+                            </p>
+                        </div>
+                    </div>
+
                     <!-- Update Entry: JSAC accepted -->
                     <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
                         <div class="space-y-3">
@@ -275,6 +319,72 @@
             <div id="research-papers" class="mt-8">
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Research Papers</h2>
                 <div class="space-y-8">
+                    <!-- Research Paper: PilotWiMAE (JSTSP) -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-4">
+                            <!-- Paper Title -->
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                PilotWiMAE: Pilot-Native Representation Learning for Wireless Channels
+                            </h3>
+                            <!-- Paper Figure -->
+                            <div class="flex justify-center">
+                                <img src="assets/images/pilotwimae_framework.png"
+                                     alt="PilotWiMAE Framework"
+                                     class="max-w-full h-80 object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                            </div>
+                            <!-- Paper Details -->
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                    Channel foundation models assume access to fully observed channels, an assumption that fails in deployment. We introduce PilotWiMAE, a self-supervised framework whose encoder ingests noisy pilot observations directly and whose attention factorizes along the axis separating temporal from joint space-frequency processing, an inductive bias inspired by the physics of the problem. Pilot input shrinks the observation space by up to two orders of magnitude and also removes the unrealistic assumption of full-CSI availability while incurring lower latency. The factorized design generates robust representations by exploiting the separable channel structure and allows a pretraining mask ratio of 99%. We pair patch-normalized reconstruction, which captures small-scale fading structure, with an auxiliary scale loss that recovers the large-scale fading features, and use an AWGN curriculum to match pilot noise at pretraining and deployment. Pretrained solely on 3.5 GHz and evaluated at 28 GHz across in-distribution and out-of-distribution settings, PilotWiMAE's cross-frequency beam selection and channel characterization beat supervised baselines despite operating on a smaller observation space. To weaken the coupling between decoder capacity and representation quality, we further propose a decoder-centric pretraining stage following the encoder-decoder joint pretraining, which allows PilotWiMAE to demonstrate competitive channel estimation without sacrificing representation quality. To foster further work in this direction, we release the PilotWiMAE pretrained weights and training pipeline, together with CSIGen, our Sionna-based ray-tracing channel-generation tool, and the channel datasets used in this work.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Self-supervised learning</span>
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">Wireless Channels</span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">Foundation Models</span>
+                                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">Pilot Observations</span>
+                                </div>
+                                <a href="https://arxiv.org/abs/2605.22856"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200">
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    Read Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Paper: PilotWiMAE (ICML AI4NextG) -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-4">
+                            <!-- Paper Title -->
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                PilotWiMAE: wireless channel pilots are all you need
+                            </h3>
+                            <!-- Paper Figure -->
+                            <div class="flex justify-center">
+                                <img src="assets/images/pilotwimae_arch.png"
+                                     alt="PilotWiMAE Architecture"
+                                     class="max-w-full h-80 object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                            </div>
+                            <!-- Paper Details -->
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                    Wireless channel foundation models assume access to fully observed channels, an assumption that fails in deployment. We introduce PilotWiMAE, a self-supervised framework whose encoder ingests noisy pilot observations directly and whose attention factorizes along the axis separating temporal from joint space-frequency processing, an inductive bias grounded in the physics of the problem. Pilot input shrinks the observation space by up to two orders of magnitude, while the factorized design yields more robust representations by exploiting separable channel structure and allowing a 99% pretraining mask ratio. Pilot-only processing also removes the unrealistic assumption of full-CSI availability while incurring lower latency. We pair patch-normalized reconstruction, which captures small-scale fading structure, with an auxiliary scale loss that recovers the large-scale fading features, and use an AWGN curriculum to match pilot noise at pretraining and deployment. Pretrained solely on 3.5 GHz and evaluated at 28 GHz across in-distribution and out-of-distribution settings, PilotWiMAE's cross-frequency beam selection and channel characterization beat supervised baselines despite operating on a significantly smaller observation space.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Self-supervised learning</span>
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">Wireless Channels</span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">Foundation Models</span>
+                                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">Pilot Observations</span>
+                                </div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 italic">
+                                    Submitted to the AI4NextG workshop at ICML 2026.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Research Paper 0 -->
                     <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
                         <div class="space-y-4">
@@ -310,41 +420,6 @@
                         </div>
                     </div>
 
-                    <!-- Research Paper 1 -->
-                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
-                        <div class="space-y-4">
-                            <!-- Paper Title -->
-                            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
-                                AdaFortiTran: An Adaptive Transformer Model for Robust OFDM Channel Estimation
-                            </h3>
-                            <!-- Paper Figure -->
-                            <div class="flex justify-center">
-                                <img src="assets/images/adafortitran_arch.png" 
-                                     alt="AdaFortiTran Architecture" 
-                                     class="max-w-full h-80 object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
-                            </div>
-                            <!-- Paper Details -->
-                            <div>
-                                <p class="text-gray-600 dark:text-gray-300 mb-3">
-                                    Deep learning models for channel estimation in Orthogonal Frequency Division Multiplexing (OFDM) systems often suffer from performance degradation under fast-fading channels and low-SNR scenarios. To address these limitations, we introduce the Adaptive Fortified Transformer (AdaFortiTran), a novel model specifically designed to enhance channel estimation in challenging environments. Our approach employs convolutional layers that exploit locality bias to capture strong correlations between neighboring channel elements, combined with a transformer encoder that applies the global Attention mechanism to channel patches. This approach effectively models both long-range dependencies and spectro-temporal interactions within single OFDM frames. We further augment the model's adaptability by integrating nonlinear representations of available channel statistics SNR, delay spread, and Doppler shift as priors. A residual connection is employed to merge global features from the transformer with local features from early convolutional processing, followed by final convolutional layers to refine the hierarchical channel representation. Despite its compact architecture, AdaFortiTran achieves up to 6 dB reduction in mean squared error (MSE) compared to state-of-the-art models. Tested across a wide range of Doppler shifts (200-1000 Hz), SNRs (0 to 25 dB), and delay spreads (50-300 ns), it demonstrates superior robustness in high-mobility environments.
-                                </p>
-                                <div class="flex flex-wrap gap-2 mb-4">
-                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Machine Learning</span>
-                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">AI for Channel Estimation</span>
-                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">OFDM Systems</span>
-                                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">Super-resolution</span>
-                                </div>
-                                <a href="https://ieeexplore.ieee.org/document/11160810" 
-                                   target="_blank" 
-                                   rel="noopener noreferrer"
-                                   class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200">
-                                    <i class="fas fa-external-link-alt mr-2"></i>
-                                    Read Paper
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Research Paper 2 -->
                     <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
                         <div class="space-y-4">
@@ -370,6 +445,41 @@
                                     <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">Self-supervised learning</span>
                                 </div>
                                 <a href="https://ieeexplore.ieee.org/document/11455140" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200">
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    Read Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Paper: AdaFortiTran -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition-colors duration-200">
+                        <div class="space-y-4">
+                            <!-- Paper Title -->
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                AdaFortiTran: An Adaptive Transformer Model for Robust OFDM Channel Estimation
+                            </h3>
+                            <!-- Paper Figure -->
+                            <div class="flex justify-center">
+                                <img src="assets/images/adafortitran_arch.png" 
+                                     alt="AdaFortiTran Architecture" 
+                                     class="max-w-full h-80 object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                            </div>
+                            <!-- Paper Details -->
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                    Deep learning models for channel estimation in Orthogonal Frequency Division Multiplexing (OFDM) systems often suffer from performance degradation under fast-fading channels and low-SNR scenarios. To address these limitations, we introduce the Adaptive Fortified Transformer (AdaFortiTran), a novel model specifically designed to enhance channel estimation in challenging environments. Our approach employs convolutional layers that exploit locality bias to capture strong correlations between neighboring channel elements, combined with a transformer encoder that applies the global Attention mechanism to channel patches. This approach effectively models both long-range dependencies and spectro-temporal interactions within single OFDM frames. We further augment the model's adaptability by integrating nonlinear representations of available channel statistics SNR, delay spread, and Doppler shift as priors. A residual connection is employed to merge global features from the transformer with local features from early convolutional processing, followed by final convolutional layers to refine the hierarchical channel representation. Despite its compact architecture, AdaFortiTran achieves up to 6 dB reduction in mean squared error (MSE) compared to state-of-the-art models. Tested across a wide range of Doppler shifts (200-1000 Hz), SNRs (0 to 25 dB), and delay spreads (50-300 ns), it demonstrates superior robustness in high-mobility environments.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Machine Learning</span>
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">AI for Channel Estimation</span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm rounded-full">OFDM Systems</span>
+                                    <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">Super-resolution</span>
+                                </div>
+                                <a href="https://ieeexplore.ieee.org/document/11160810" 
                                    target="_blank" 
                                    rel="noopener noreferrer"
                                    class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200">
